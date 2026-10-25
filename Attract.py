@@ -90,7 +90,7 @@ def Attract(n):
         for i in range(1,n-1):
             for j in range(1,n-1):
                 if board[i][j]==2 and board[i+1][j+1]==1 and board[i+1][j-1]==1 and board[i-1][j+1]==1 and board[i-1][j-1]==1:
-                    player1+=1
+                    player2+=1
                 elif board[i][j]==1 and board[i+1][j+1]==2 and board[i+1][j-1]==2 and board[i-1][j+1]==2 and board[i-1][j-1]==2:
                     player1+=1
     if player1>player2:
