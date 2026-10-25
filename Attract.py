@@ -93,11 +93,10 @@ def Attract(n):
                     player2+=1
                 elif board[i][j]==1 and board[i+1][j+1]==2 and board[i+1][j-1]==2 and board[i-1][j+1]==2 and board[i-1][j-1]==2:
                     player1+=1
-    if player1>player2:
-        print("\n Le Joueur 2 a gagné!")
-    elif player1<player2:
-        print("\n Le Joueur 1 a gagné!")
-    else:
-        print("\n Match nul!")
+        if player1>player2:
+            print("\n Le Joueur 1 a gagné!")
+        elif player1<player2:
+            print("\n Le Joueur 2 a gagné!")
+    print("\n Match nul!")
 
 Attract(4)
